@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>options</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .flex-between {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .input-add-site,
+      .input-default-site {
+        flex-grow: 1;
+        margin-right: 8px;
+      }
+      .block-site-button,
+      .block-set-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        border: 1px solid #409eff;
+        background-color: #409eff;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        width: 40px;
+        padding: 4px;
+        cursor: pointer;
+        margin-left: 7px;
+      }
+      .block-site-label {
+        width: 100%;
+      }
+      .block-site-list {
+        border: 1px solid gray;
+        border-radius: 3px;
+        height: 300px;
+        overflow-y: auto;
+        width: 100%;
+        padding: 4px;
+        box-sizing: border-box;
+      }
+      .block-site-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 3px;
+        padding: 2px 4px;
+      }
+      .block-site-row:hover {
+        background-color: #c7d8e9 !important;
+      }
+      .block-site-value {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .block-site-del {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        cursor: pointer;
+        border-radius: 50% 50%;
+      }
+      .block-site-clear {
+        background-color: #f56c6c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        border: 1px solid #f56c6c;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        width: 40px;
+        padding: 2px 4px;
+        cursor: pointer;
+      }
+      .block-site-list-label {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-between" style="margin-bottom: 8px">
+      <input class="input-default-site" placeholder="设置跳转网址" />
+      <section id="button-set" class="block-set-button">设置</section>
+    </div>
+    <div class="flex-between">
+      <input class="input-add-site" />
+      <section class="block-site-button">添加</section>
+    </div>
+    <div class="block-site-list-label">
+      <section class="block-site-label">屏蔽列表:</section>
+      <section class="block-site-clear">清空</section>
+    </div>
+    <div class="block-site-list"></div>
+    <script src="./js/options.js"></script>
+  </body>
+</html>

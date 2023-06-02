@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>打赏</title>
+    <style>
+      body {
+        width: 220px;
+        border-radius: 6px;
+      }
+      .title {
+        width: 100%;
+        text-align: center;
+      }
+      .flexrow {
+        display: flex;
+        margin-top: 6px;
+        justify-content: center;
+      }
+      .qrcodeImg {
+        width: 180px;
+        height: 200px;
+        border: 1px solid #e2e2e2;
+      }
+      .qrcodeImg + .qrcodeImg {
+        margin-left: 6px;
+      }
+      .github-icon,
+      .gitee-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        margin-left: 8px;
+      }
+      .flexright {
+        margin-top: 8px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">开发不易，欢迎打赏</div>
+    <div class="flexrow">
+      <img alt="" src="./imgs/wechat.jpg" class="qrcodeImg" />
+      <!-- <img alt="" src="./imgs/alipay.jpg" class="qrcodeImg" /> -->
+    </div>
+    <div class="flexright">
+      <img
+        alt="github"
+        src="./imgs/github.svg"
+        id="github-icon"
+        class="github-icon"
+      />
+      <img
+        alt="gitee"
+        src="./imgs/gitee.svg"
+        id="gitee-icon"
+        class="gitee-icon"
+      />
+    </div>
+    <script src="./js/popup.js"></script>
+  </body>
+</html>
